@@ -14,7 +14,7 @@ var refreshrate = 5; // Traffic data is updated every 5 minutes.
 var myparticleemail = process.env.myparticleemail; // The email address you use to log in to build.particle.io.
 var myparticlepw = process.env.myparticlepw; // The password you use to log in to build.particle.io.
 var myparticletoken = process.env.myparticletoken; // Photon token (build.particle.io > Settings)
-var mybingmapskey = process.env.mybingmapskey; / Bing Maps API Key (bingmapsportal.com)
+var mybingmapskey = process.env.mybingmapskey; // Bing Maps API Key (bingmapsportal.com)
 
 //
 ///////////////////////////////////////

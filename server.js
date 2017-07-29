@@ -1,18 +1,26 @@
 //////// Customize this data! /////////
 //
-var startpoint = "Microsoft, 10900 Stonelake Blvd. Austin, TX 78759"; // Commute starting address
+var startpoint = "708 Greenway Dr, Coppell TX 75019"; // Commute starting address
 var endpoint = "Pinballz, 8940 Research Blvd Ste 100, Austin, TX 78758"; // Commute ending address
 var trafficlowthreshold = 3; // If traffic adds 3 min. or less to commute, traffic is "low."
 var traffichighthreshold = 10; // If traffic adds 10 min. or more to commute, traffic is "high." If traffic adds between 3 and 10 minutes to commute, traffic is "medium."
 var refreshrate = 5; // Traffic data is updated every 5 minutes.
-var myparticleemail = "StoreThisLocallyOrInAzure" // The email address you use to log in to build.particle.io.
-var myparticlepw = "StoreThisLocallyOrInAzure" // The password you use to log in to build.particle.io.
-var myparticletoken = "StoreThisLocallyOrInAzure" // Photon token (build.particle.io > Settings)
-var mybingmapskey = "StoreThisLocallyOrInAzure" // Bing Maps API Key (bingmapsportal.com)
+
+//var myparticleemail = process.env.myparticleemail; // The email address you use to log in to build.particle.io.
+//var myparticlepw = process.env.myparticlepw; // The password you use to log in to build.particle.io.
+//var myparticletoken = process.env.myparticletoken; // Photon token (build.particle.io > Settings)
+//var mybingmapskey = process.env.mybingmapskey; / Bing Maps API Key (bingmapsportal.com)
+
+var myparticleemail = process.env.myparticleemail; // The email address you use to log in to build.particle.io.
+var myparticlepw = process.env.myparticlepw; // The password you use to log in to build.particle.io.
+var myparticletoken = process.env.myparticletoken; // Photon token (build.particle.io > Settings)
+var mybingmapskey = process.env.mybingmapskey; / Bing Maps API Key (bingmapsportal.com)
+
 //
 ///////////////////////////////////////
 
 // Set up Photon
+
 
 var Particle = require("particle-api-js");
 var particle = new Particle();
